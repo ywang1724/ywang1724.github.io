@@ -1,0 +1,62 @@
+body {
+    font-family: "Gill Sans", Helvetica, Arial, sans-serif;
+    margin: 0;
+    overflow: hidden;
+}
+
+/* title */
+header {
+    width: 1024px;
+    height: 80px;
+    margin: 0 auto;
+}
+header ul {
+    list-style-type: none;
+    margin: 0 25px;
+    padding: 0;
+}
+header li {
+    display: inline-block;
+    margin: 0 5px;
+}
+header a {
+    display: block;
+    text-decoration: none;
+    line-height: 60px;
+    height: 60px;
+    width: 60px;
+    border-radius: 0 100px 100px 100px;
+    text-align: center;
+    background-color: #FDC72F;
+    font-size: 40px;
+    color: #FFF;
+    text-shadow: 0px 0px 100px rgba(0,0,0,0);
+    transition: all 0.4s ease-in;
+}
+header a:hover {
+    background-color:#4C1569;
+    line-height: 48px;
+    text-shadow: 0px 0px 0px rgba(0,0,0,1);
+    transition: all 0 ease-out;
+}
+
+/* audio-control */
+#audioControl {
+    position: absolute;
+    top: -200px;
+    left: -200px;
+    font-size: 24px;
+    color: #3385FF;
+    cursor: pointer;
+    transition: all 1s ease-out;
+}
+
+/* canvas drawing */
+.clock {
+    width: 300px;
+    margin: 0 auto;
+}
+#clock {
+    width: 300px;
+    height: 300px;
+}

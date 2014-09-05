@@ -3,120 +3,8 @@
     <head>
         <meta charset="utf-8" />
         <title>欢迎您！</title>
-        
-        <style type="text/css">
-            body {
-                font-family: "Gill Sans", Helvetica, Arial, sans-serif;
-                margin: 0;
-                overflow: hidden;
-            }
-            /*title*/
-            header {
-                width: 1024px;
-                height: 80px;
-                margin: 0 auto;
-            }
-            header ul {
-                list-style-type: none;
-                margin: 0 25px;
-                padding: 0;
-            }
-            header li {
-                display: inline-block;
-                margin: 0 5px;
-            }
-            header a {
-                display: block;
-                text-decoration: none;
-                line-height: 60px;
-                height: 60px;
-                width: 60px;
-                border-radius: 0 100px 100px 100px;
-                text-align: center;
-                background-color: #FDC72F;
-                font-size: 40px;
-                color: #FFF;
-                text-shadow: 0px 0px 100px rgba(0,0,0,0);
-                transition: all 0.4s ease-in;
-            }
-            header a:hover {
-                background-color:#4C1569;
-                line-height: 48px;
-                text-shadow: 0px 0px 0px rgba(0,0,0,1);
-                transition: all 0 ease-out;
-            }
-            /*audio-control*/
-            #audioControl {
-                position: absolute;
-                top: -200px;
-                left: -200px;
-                font-size: 24px;
-                color: #3385FF;
-                cursor: pointer;
-                transition: all 1s ease-out;
-            }
-        </style>
-        <script>
-            var EventUtil = {
-                addHandler: function(elem, type, handler) {
-                    if (elem.addEventListener) {
-                        elem.addEventListener(type, handler, false);
-                    } else if (elem.attachEvent) {
-                        elem.attachEvent("on"+type, handler);
-                    } else {
-                        elem["on"+type] = handler;
-                    }
-                },
-                removeHandler: function(elem, type, handler) {
-                    if (elem.removeEventListener) {
-                        elem.removeEventListener(type, handler, false);
-                    } else if (elem.detachEvent) {
-                        elem.detachEvent("on"+type, handler);
-                    } else {
-                        elem["on"+type] = null;
-                    }
-                },
-                getEvent: function(event) {
-                    return event ? event : window.event;
-                },
-                getTarget: function(event) {
-                    return event.target || event.srcElement;
-                },
-                preventDefault: function(event) {
-                    if (event,preventDefault) {
-                        event.preventDefault();
-                    } else {
-                        event.returnValue = false;
-                    }
-                },
-                stopPropagation: function(event) {
-                    if (event.stopPropagation) {
-                        event.stopPropagation();
-                    } else {
-                        event.cancelBubble = true;
-                    }
-                }
-
-            };
-            window.onload = function() {
-                var audioControl = document.getElementById('audioControl'), 
-                    audio = document.getElementById('audio');
-                audioControl.onclick = function() {
-                    if (audio.paused) {
-                        audio.play();
-                        audioControl.innerHTML = 'Pause';
-                    } else {
-                        audio.pause();
-                        audioControl.innerHTML = 'Play';
-                    }
-                };
-                EventUtil.addHandler(document, "mousemove", function(event) {
-                    event = EventUtil.getEvent(event);
-                    audioControl.style.left = event.clientX - (audioControl.clientWidth / 2) + 'px';
-                    audioControl.style.top = event.clientY - (audioControl.clientHeight / 2) + 'px';
-                });
-            };
-        </script>
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <script src="index.js"></script>
     </head>
     <body>
         <header>
@@ -140,6 +28,9 @@
             <source src="Kiss_The_Rain.mp3" type="audio/mpeg">
             Audio player not available.
         </audio>
+        <div class="clock">
+	        <canvas id="clock">A drawing of clock.</canvas>
+        </div>
         <span id="audioControl">Pause</span>
     </body>
 </html>
