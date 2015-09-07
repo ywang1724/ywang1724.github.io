@@ -3,6 +3,10 @@
 	padding-left: 100px;
 }
 
+.my-abc {
+    margin-bottom: 0 !important;
+}
+
 .banner {
 	background: #ADD8E6;
 	height: 300px;
@@ -19,6 +23,11 @@
 	font-size: 18px;
 }
 
+.teacher-version1 {
+	color: #FFFFFF;
+	font-size: 12px;
+}
+
 .divider {
 	color: #FFFFFF;
 	height: 3px;
@@ -33,7 +42,7 @@ ul.banner-info li {
 	color: #FFFFFF;
 	list-style-type: none;
 	padding-bottom: 5px;
-	font: 
+	font:
 }
 
 ul.banner-info li.text-scan {
@@ -159,7 +168,7 @@ div.input-text {
 }
 
 .form-error {
-	margin: -30px 0 -20px 0; 
+	margin: -30px 0 -20px 0;
 }
 
 .not-visible {
@@ -170,7 +179,8 @@ div.input-text {
 	text-align: left;
 	color: #808080;
 	margin: 0 auto;
-	width: 300px;
+	margin-top: 30px;
+	width: 500px;
 }
 
 .my-text-blue {

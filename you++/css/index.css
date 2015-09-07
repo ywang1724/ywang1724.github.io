@@ -44,6 +44,7 @@
     height: 300px;
     width: 500px;
     margin: 0 auto;
+    text-align: center;
 }
 
 .my-img > img {
@@ -74,16 +75,17 @@
 
 .my-font-small {
     font-size: 14px;
+    margin: 0;
 }
 
 .my-font-big {
-    font-size: 24px;
+    font-size: 22px;
     margin: 30px 0;
-    font-weight: 500;
+    font-weight: lighter;
 }
 
 .my-space {
-    margin: 30px;
+    margin-top: 30px;
 }
 
 .my-func {
@@ -108,11 +110,12 @@
 }
 
 .my-func-content-big {
-    font-size: 48px;
+    font-size: 40px;
 }
 
 .my-func-content-small {
-    font-size: 28px;
+    font-size: 20px;
+    margin: 0 !important;
 }
 
 .my-func1 {
@@ -128,7 +131,7 @@
 }
 
 .my-right {
-    text-align: right;
+    /* text-align: right; */
 }
 
 .my-download-content {
