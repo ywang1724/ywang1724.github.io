@@ -1,3 +1,7 @@
+body {
+    font-family: NotoSansHans-Regular, AvenirNext-Regular, "proxima-nova", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", "Open Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
 .navbar {
     background-color: #FFFFFF;
 }
@@ -161,6 +165,8 @@
     width: 360px;
     background-color: grey;
     margin: 0 auto;
+    background-image: url(../img/map.png);
+    background-size: 100% 100%;
 }
 
 .my-link {
@@ -172,9 +178,14 @@
 .my-qcode {
     height: 150px;
     width: 150px;
-    background-color: grey;
+    background-image: url(../img/qcode-copy.png);
+    background-size: 100% 100%;
     margin-left: -15px;
 }
+
+.my-qcode-content {
+
+font-size: 14px;padding-top: 5px;margin-left: -5px;}
 
 .my-bottom {
     text-align: center;
