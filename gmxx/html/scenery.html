@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../bower_components/Swiper/dist/css/swiper.min.css" />
+    <link rel="stylesheet" href="../dist/css/scenery.css" />
+</head>
+
+<body>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background-image:url(../dist/img/DSC03550.JPG)">
+                <div class="content">光明小学</div>
+            </div>
+            <div class="swiper-slide" style="background-image:url(../dist/img/DSC_1924.JPG)">
+                <div class="content">光明小学</div>
+            </div>
+            <div class="swiper-slide" style="background-image:url(../dist/img/DSC_2622.JPG)">
+                <div class="content">光明小学</div>
+            </div>
+            <div class="swiper-slide" style="background-image:url(../dist/img/DSC_2632.JPG)">
+                <div class="content">光明小学</div>
+            </div>
+            <div class="swiper-slide" style="background-image:url(../dist/img/DSC_2638.JPG)">
+                <div class="content">光明小学</div>
+            </div>
+            <div class="swiper-slide" style="background-image:url(../dist/img/DSC_2639.JPG)">
+                <div class="content">光明小学</div>
+            </div>
+            <div class="swiper-slide" style="background-image:url(../dist/img/DSC_2641.JPG)">
+                <div class="content">光明小学</div>
+            </div>
+            <div class="swiper-slide" style="background-image:url(../dist/img/DSC_2644.JPG)">
+                <div class="content">光明小学</div>
+            </div>
+            <div class="swiper-slide" style="background-image:url(../dist/img/DSC_6676.JPG)">
+                <div class="content">光明小学</div>
+            </div>
+            <div class="swiper-slide" style="background-image:url(../dist/img/DSC_6682.JPG)">
+                <div class="content">光明小学</div>
+            </div>
+            <div class="swiper-slide" style="background-image:url(../dist/img/DSC_6684.JPG)">
+                <div class="content">光明小学</div>
+            </div>
+            <div class="swiper-slide" style="background-image:url(../dist/img/DSC_6685.JPG)">
+                <div class="content">光明小学</div>
+            </div>
+            <div class="swiper-slide" style="background-image:url(../dist/img/DSC_6690.JPG)">
+                <div class="content">光明小学</div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <script src="../bower_components/zepto/zepto.min.js"></script>
+    <script src="../bower_components/Swiper/dist/js/swiper.jquery.min.js"></script>
+    <script>
+    var mySwiper = new Swiper('.swiper-container', {
+        direction: 'horizontal',
+        loop: true,
+        effect: 'cube',
+        pagination: '.swiper-pagination',
+        paginationHide: false,
+        parallax: true
+    });
+    mySwiper.on('tap', function() {
+        $('.swiper-slide .content').toggleClass('hide');
+    });
+    </script>
+</body>
+
+</html>
