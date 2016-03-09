@@ -17,5 +17,6 @@ gulp.task('less', function () {
         .pipe(gulp.dest('./dist/css/'));
 });
 
-gulp.task('default', ['img', 'less']);
+// gulp.task('default', ['img', 'less']);
 
+gulp.task('default', ['less']);
