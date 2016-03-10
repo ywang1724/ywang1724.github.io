@@ -2,6 +2,9 @@ html,
 body {
   height: 100%;
 }
+body {
+  background-color: #000;
+}
 .video-content {
   display: -webkit-box;
   -webkit-box-orient: vertical;
