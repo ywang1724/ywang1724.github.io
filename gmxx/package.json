@@ -11,6 +11,7 @@
   "dependencies": {
     "bower": "^1.7.7",
     "gulp": "^3.9.1",
+    "gulp-ejs": "^2.1.1",
     "gulp-imagemin": "^2.4.0",
     "gulp-less": "^3.0.5"
   }
