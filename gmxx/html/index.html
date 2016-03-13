@@ -97,12 +97,20 @@
         loop: true,
         pagination: '.swiper-pagination',
         parallax: true,
-        autoplay: 2000
+        autoplay: 2000,
+        onTouchMove: function(swiper, event) {
+            swiper.startAutoplay();
+        },
+        onTouchMoveOpposite: function(swiper, event) {
+            swiper.startAutoplay();
+        }
     });
     var myPlayer = videojs('really-cool-video');
-    $('.my-slider').on('click', function() {
-        mySwiper.stopAutoplay();
-        myPlayer.play();
+    $('.my-slider').on('tap', function() {
+        if ($('.slide-video').hasClass('swiper-slide-active')) {
+            mySwiper.stopAutoplay();
+            myPlayer.play();
+        }
     });
     </script>
 </body>
