@@ -10,6 +10,7 @@
   "license": "MIT",
   "dependencies": {
     "bower": "^1.7.7",
+    "del": "^2.2.0",
     "gulp": "^3.9.1",
     "gulp-ejs": "^2.1.1",
     "gulp-imagemin": "^2.4.0",

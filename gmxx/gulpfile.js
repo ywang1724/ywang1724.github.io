@@ -2,6 +2,11 @@ var gulp = require('gulp');
 var imagemin = require('gulp-imagemin');
 var less = require('gulp-less');
 var ejs = require("gulp-ejs");
+var del = require('del');
+
+gulp.task('clean', function() {
+    return del(['dist/img']);
+});
 
 gulp.task('img', function() {
     return gulp.src('./img/*')
@@ -28,4 +33,4 @@ gulp.task('ejs', function() {
         .pipe(gulp.dest("./dist/html/"));
 });
 
-gulp.task('default', ['less', 'ejs']);
+gulp.task('default', ['clean', 'img', 'less', 'ejs']);
