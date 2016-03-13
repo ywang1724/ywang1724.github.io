@@ -79,6 +79,7 @@ body {
   -webkit-box-align: center;
   background-color: #fbbc05;
   margin: 10px 5px 5px 10px;
+  border-radius: 8px;
 }
 .my-menu .xyxx {
   display: -webkit-box;
@@ -87,6 +88,7 @@ body {
   -webkit-box-align: center;
   background-color: #ea4335;
   margin: 10px 10px 5px 5px;
+  border-radius: 8px;
 }
 .my-menu .xygg {
   display: -webkit-box;
@@ -95,6 +97,7 @@ body {
   -webkit-box-align: center;
   background-color: #FF4DA9;
   margin: 5px 5px 5px 10px;
+  border-radius: 8px;
 }
 .my-menu .msfc {
   display: -webkit-box;
@@ -103,6 +106,7 @@ body {
   -webkit-box-align: center;
   background-color: #34a853;
   margin: 5px 10px 5px 5px;
+  border-radius: 8px;
 }
 .my-menu .xyly {
   display: -webkit-box;
@@ -111,6 +115,7 @@ body {
   -webkit-box-align: center;
   background-color: #FFA921;
   margin: 5px 5px 10px 10px;
+  border-radius: 8px;
 }
 .my-menu .jycg {
   display: -webkit-box;
@@ -119,4 +124,5 @@ body {
   -webkit-box-align: center;
   background-color: #3ABCFF;
   margin: 5px 10px 10px 5px;
+  border-radius: 8px;
 }
