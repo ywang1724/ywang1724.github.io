@@ -55,6 +55,8 @@ body {
   -webkit-box-pack: center;
   -webkit-box-align: center;
   height: 100%;
+  background-image: url(../img/1.jpg);
+  background-size: cover;
 }
 .my-slider .swiper-container .swiper-wrapper .slide-video .video-content .video-js {
   width: 100%;

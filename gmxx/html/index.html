@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>微官网</title>
     <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="../bower_components/pure/pure-min.css" />
@@ -97,16 +97,10 @@
         loop: true,
         pagination: '.swiper-pagination',
         parallax: true,
-        autoplay: 2000,
-        onTouchMove: function(swiper, event) {
-            swiper.startAutoplay();
-        },
-        onTouchMoveOpposite: function(swiper, event) {
-            swiper.startAutoplay();
-        }
+        autoplay: 2000
     });
     var myPlayer = videojs('really-cool-video');
-    $('.my-slider').on('tap', function() {
+    $('.my-slider').on('click', function() {
         if ($('.slide-video').hasClass('swiper-slide-active')) {
             mySwiper.stopAutoplay();
             myPlayer.play();
