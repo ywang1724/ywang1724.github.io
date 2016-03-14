@@ -20,7 +20,7 @@ body {
 }
 .swiper-slide {
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-color: #000;
 }
