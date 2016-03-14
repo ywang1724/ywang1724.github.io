@@ -10,6 +10,7 @@ body {
   color: #000;
   margin: 0;
   padding: 0;
+  transform: rotate(90deg);
 }
 .hide {
   display: none;
