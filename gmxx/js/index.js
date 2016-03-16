@@ -1,18 +1,18 @@
+Loading.show();
+
 require('../bower_components/font-awesome/css/font-awesome.min.css');
 require('../bower_components/pure/pure-min.css');
 require('../bower_components/Swiper/dist/css/swiper.min.css');
 require('../bower_components/video.js/dist/video-js.min.css');
 require('../less/index.less');
 
-var $ = require('./lib/zepto');
-var Swiper = require('swiper');
-var videojs = require('videojs');
-
 $(function() {
     var lineHeight1 = $('.line-1').height(),
         lineHeight2 = $('.line-2').height();
     $('.xxgk, .xyxx, .xyly, .jycg').height(lineHeight1 - 15);
     $('.xygg, .msfc').height(lineHeight2 - 10);
+    $('.my-content').css('visibility', 'visible');
+    Loading.hide();
     var mySwiper = new Swiper('.swiper-container', {
         direction: 'horizontal',
         loop: true,

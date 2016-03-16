@@ -2,8 +2,23 @@ var webpack = require('webpack');
 
 module.exports = {
     //插件项
-    plugins: [ //提公用js到common.js文件中
-        new webpack.optimize.CommonsChunkPlugin('common.js')
+    plugins: [
+        // new webpack.optimize.UglifyJsPlugin({
+        //     compress: {
+        //         warnings: false
+        //     },
+        //     mangle: {
+        //         except: ['$super', '$', 'exports', 'require', 'module']
+        //     }
+        // }),
+        //提公用js到common.js文件中
+        new webpack.optimize.CommonsChunkPlugin('common.js'),
+        new webpack.ProvidePlugin({
+            $: 'zepto',
+            Loading: 'js/lib/loading.js',
+            videojs: 'videojs',
+            Swiper: 'swiper'
+        })
     ],
     //页面入口文件配置
     entry: {

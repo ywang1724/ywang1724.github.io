@@ -13,7 +13,7 @@ gulp.task('clean', function() {
 });
 
 gulp.task('js', function() {
-    return gulp.src('./src/js/**/*.js')
+    return gulp.src('./bower_components/video.js/dist/video.min.js')
         .pipe(uglify())
         .pipe(gulp.dest('./dist/js/'));
 });
