@@ -27,14 +27,6 @@ $(function() {
         $(this).addClass('module-tap-active');
         setTimeout(function() {
             $(that).removeClass('module-tap-active');
-        }, 1000);
-    });
-
-    $('.my-slider').on('click', function() {
-        alert(mySwiper.activeIndex);
-        // if ($('.slide-video').hasClass('swiper-slide-active')) {
-        //     mySwiper.stopAutoplay();
-        //     myPlayer.play();
-        // }
+        }, 1500);
     });
 });
