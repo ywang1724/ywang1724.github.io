@@ -22,7 +22,7 @@ $(function() {
         $('.loading').hide();
     }, 3000);
 
-    $('.module-tap').on('tap', function() {
+    $('.module-tap').on('click', function() {
         var that = this;
         $(this).addClass('module-tap-active');
         setTimeout(function() {
