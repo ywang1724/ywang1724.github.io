@@ -19,9 +19,10 @@ gulp.task('js', function() {
 });
 
 gulp.task('img', function() {
-    return gulp.src('./src/img/*')
+    return gulp.src('./img/loading.gif')
         .pipe(imagemin({
-            progressive: true
+            progressive: true,
+            interlaced: true
         }))
         .pipe(gulp.dest('./dist/img/'));
 });
