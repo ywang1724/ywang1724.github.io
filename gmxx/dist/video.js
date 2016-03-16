@@ -7,7 +7,9 @@ webpackJsonp([2],{
 	__webpack_require__(25);
 
 	$(function() {
-		$('.loading').hide();
+		setTimeout(function(){
+	        $('.loading').hide();
+	    }, 3000);
 	});
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 

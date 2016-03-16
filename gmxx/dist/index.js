@@ -21,7 +21,11 @@ webpackJsonp([0],[
 	        autoplay: 2000
 	    });
 	    var myPlayer = videojs('really-cool-video');
-	    $('.loading').hide();
+
+	    setTimeout(function(){
+	        $('.loading').hide();
+	    }, 3000);
+
 	    $('.my-slider').on('click', function() {
 	        if ($('.slide-video').hasClass('swiper-slide-active')) {
 	            mySwiper.stopAutoplay();
