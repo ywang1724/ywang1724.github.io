@@ -15,7 +15,6 @@ module.exports = {
         new webpack.optimize.CommonsChunkPlugin('common.js'),
         new webpack.ProvidePlugin({
             $: 'zepto',
-            Loading: 'js/lib/loading.js',
             videojs: 'videojs',
             Swiper: 'swiper'
         })

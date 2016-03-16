@@ -94,37 +94,6 @@
 /******/ ({
 
 /***/ 1:
-/***/ function(module, exports, __webpack_require__) {
-
-	var $ = __webpack_require__(2);
-
-	var loadingEl = $('<div style="\
-						display:none;\
-						width:100%;\
-						height:100%;\
-						position:fixed;\
-						left:0px;\
-						top:0px;\
-						z-index:9999;\
-					    background: #fff url(../img/loading.gif) center center   no-repeat;\
-					    background-size: 35% auto;"></div>').appendTo($(document.body));
-
-	module.exports = {
-	    show: function() {
-	        loadingEl.css({
-	            "display": "block",
-	            "backgroundSize": "40rem auto"
-	        });
-	    },
-	    hide: function() {
-	        loadingEl.css("display", "none");
-	    }
-	}
-
-
-/***/ },
-
-/***/ 2:
 /***/ function(module, exports) {
 
 	/* Zepto v1.1.6 - zepto event ajax form ie - zeptojs.com/license */
@@ -133,7 +102,7 @@
 
 /***/ },
 
-/***/ 7:
+/***/ 6:
 /***/ function(module, exports) {
 
 	/*
@@ -190,7 +159,7 @@
 
 /***/ },
 
-/***/ 14:
+/***/ 13:
 /***/ function(module, exports, __webpack_require__) {
 
 	/*

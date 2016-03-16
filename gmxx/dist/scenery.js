@@ -3,10 +3,8 @@ webpackJsonp([1],{
 /***/ 0:
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(Loading, $, Swiper) {Loading.show();
-
-	__webpack_require__(17);
-	__webpack_require__(24);
+	/* WEBPACK VAR INJECTION */(function($, Swiper) {__webpack_require__(16);
+	__webpack_require__(23);
 
 	$(function() {
 	    var mySwiper = new Swiper('.swiper-container', {
@@ -17,18 +15,17 @@ webpackJsonp([1],{
 	        paginationHide: false,
 	        parallax: true
 	    });
-	    $('.swiper-container').css('visibility', 'visible');
-	    Loading.hide();
+	    $('.loading').hide();
 	    mySwiper.on('tap', function() {
 	        $('.swiper-slide .content').toggleClass('hide');
 	    });
 	});
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1), __webpack_require__(2), __webpack_require__(3)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1), __webpack_require__(2)))
 
 /***/ },
 
-/***/ 3:
+/***/ 2:
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -53,16 +50,16 @@ webpackJsonp([1],{
 
 /***/ },
 
-/***/ 17:
+/***/ 16:
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(18);
+	var content = __webpack_require__(17);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(14)(content, {});
+	var update = __webpack_require__(13)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -80,10 +77,10 @@ webpackJsonp([1],{
 
 /***/ },
 
-/***/ 18:
+/***/ 17:
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(7)();
+	exports = module.exports = __webpack_require__(6)();
 	// imports
 
 
@@ -95,16 +92,16 @@ webpackJsonp([1],{
 
 /***/ },
 
-/***/ 24:
+/***/ 23:
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(25);
+	var content = __webpack_require__(24);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(14)(content, {});
+	var update = __webpack_require__(13)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -122,10 +119,10 @@ webpackJsonp([1],{
 
 /***/ },
 
-/***/ 25:
+/***/ 24:
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(7)();
+	exports = module.exports = __webpack_require__(6)();
 	// imports
 
 

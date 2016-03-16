@@ -1,5 +1,3 @@
-Loading.show();
-
 require('../bower_components/Swiper/dist/css/swiper.min.css');
 require('../less/scenery.less');
 
@@ -12,8 +10,7 @@ $(function() {
         paginationHide: false,
         parallax: true
     });
-    $('.swiper-container').css('visibility', 'visible');
-    Loading.hide();
+    $('.loading').hide();
     mySwiper.on('tap', function() {
         $('.swiper-slide .content').toggleClass('hide');
     });
