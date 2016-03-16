@@ -3,15 +3,9 @@ webpackJsonp([2],{
 /***/ 0:
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function($) {__webpack_require__(18);
+	__webpack_require__(18);
 	__webpack_require__(25);
 
-	$(function() {
-		setTimeout(function(){
-	        $('.loading').hide();
-	    }, 3000);
-	});
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
 
