@@ -31,9 +31,10 @@ $(function() {
     });
 
     $('.my-slider').on('click', function() {
-        if ($('.slide-video').hasClass('swiper-slide-active')) {
-            mySwiper.stopAutoplay();
-            myPlayer.play();
-        }
+        alert(mySwiper.activeIndex);
+        // if ($('.slide-video').hasClass('swiper-slide-active')) {
+        //     mySwiper.stopAutoplay();
+        //     myPlayer.play();
+        // }
     });
 });
