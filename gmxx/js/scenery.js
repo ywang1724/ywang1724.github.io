@@ -10,7 +10,9 @@ $(function() {
         paginationHide: false,
         parallax: true
     });
-    $('.loading').hide();
+    setTimeout(function(){
+        $('.loading').hide();
+    }, 3000);
     mySwiper.on('tap', function() {
         $('.swiper-slide .content').toggleClass('hide');
     });
