@@ -22,6 +22,14 @@ $(function() {
         $('.loading').hide();
     }, 3000);
 
+    $('.module-tap').on('tap', function() {
+        var that = this;
+        $(this).addClass('module-tap-active');
+        setTimeout(function() {
+            $(that).removeClass('module-tap-active');
+        }, 1000);
+    });
+
     $('.my-slider').on('click', function() {
         if ($('.slide-video').hasClass('swiper-slide-active')) {
             mySwiper.stopAutoplay();
