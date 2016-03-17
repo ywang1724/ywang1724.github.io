@@ -16,7 +16,7 @@ webpackJsonp([1],{
 	        setTimeout(function() {
 	            $(that).removeClass('module-tap-active');
 	            location.href = 'http://ywang1724.github.io/gmxx/html/scenery.html';
-	        }, 1500);
+	        }, 1400);
 	    });
 	});
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
