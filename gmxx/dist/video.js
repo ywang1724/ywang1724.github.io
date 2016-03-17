@@ -1,10 +1,10 @@
-webpackJsonp([2],{
+webpackJsonp([3],{
 
 /***/ 0:
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function($, videojs) {__webpack_require__(18);
-	__webpack_require__(25);
+	__webpack_require__(31);
 
 	$(function() {
 		var myPlayer = videojs('really-cool-video');
@@ -93,13 +93,13 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 25:
+/***/ 31:
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(26);
+	var content = __webpack_require__(32);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(13)(content, {});
@@ -120,7 +120,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 26:
+/***/ 32:
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(6)();

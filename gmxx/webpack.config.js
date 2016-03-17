@@ -23,7 +23,8 @@ module.exports = {
     entry: {
         index: './js/index.js',
         video: './js/video.js',
-        scenery: './js/scenery.js'
+        scenery: './js/scenery.js',
+        overview: './js/overview.js'
     },
     //入口文件输出配置
     output: {
@@ -41,6 +42,9 @@ module.exports = {
         }, {
             test: /\.css$/,
             loader: 'style-loader!css-loader'
+        }, {
+            test: /\.(jpg|png)$/,
+            loader: "url?limit=8192&name=../dist/[name].[ext]"
         }]
     },
     //其它解决方案配置
