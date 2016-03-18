@@ -24,7 +24,8 @@ module.exports = {
         index: './js/index.js',
         video: './js/video.js',
         scenery: './js/scenery.js',
-        overview: './js/overview.js'
+        overview: './js/overview.js',
+        team: './js/team.js'
     },
     //入口文件输出配置
     output: {
