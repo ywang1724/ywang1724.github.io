@@ -24,7 +24,6 @@ webpackJsonp([1],[
 	        var that = this;
 	        $(this).addClass('module-tap-active');
 	        setTimeout(function() {
-	            $(that).removeClass('module-tap-active');
 	            location.href = 'http://ywang1724.github.io/gmxx/html/scenery.html';
 	        }, 1500);
 	    });
