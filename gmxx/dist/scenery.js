@@ -3,8 +3,8 @@ webpackJsonp([2],{
 /***/ 0:
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function($, Swiper) {__webpack_require__(17);
-	__webpack_require__(30);
+	/* WEBPACK VAR INJECTION */(function($, Swiper) {__webpack_require__(16);
+	__webpack_require__(29);
 
 	$(function() {
 	    var mySwiper = new Swiper('.swiper-container', {
@@ -23,11 +23,11 @@ webpackJsonp([2],{
 	    });
 	});
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1), __webpack_require__(3)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1), __webpack_require__(2)))
 
 /***/ },
 
-/***/ 3:
+/***/ 2:
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -52,16 +52,16 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 17:
+/***/ 16:
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(18);
+	var content = __webpack_require__(17);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(14)(content, {});
+	var update = __webpack_require__(13)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -79,10 +79,10 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 18:
+/***/ 17:
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(7)();
+	exports = module.exports = __webpack_require__(6)();
 	// imports
 
 
@@ -94,16 +94,16 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 30:
+/***/ 29:
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(31);
+	var content = __webpack_require__(30);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(14)(content, {});
+	var update = __webpack_require__(13)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -121,10 +121,10 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 31:
+/***/ 30:
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(7)();
+	exports = module.exports = __webpack_require__(6)();
 	// imports
 
 
