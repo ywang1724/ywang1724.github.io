@@ -475,7 +475,7 @@ body.vjs-full-window {
   bottom: 1.5em;
   max-height: 15em; }
 
-.vjs-menu-button-popup:hover .vjs-menu,
+.vjs-workinghover .vjs-menu-button-popup:hover .vjs-menu,
 .vjs-menu-button-popup .vjs-menu.vjs-lock-showing {
   display: block; }
 
@@ -1127,10 +1127,6 @@ video::-webkit-media-text-track-display {
     border-top-color: #73859f; }
   100% {
     border-top-color: #73859f; } }
-
-.vjs-chapters-button .vjs-menu {
-  left: -10em;
-  width: 0; }
 
 .vjs-chapters-button .vjs-menu ul {
   width: 24em; }

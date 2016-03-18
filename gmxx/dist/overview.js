@@ -9,7 +9,7 @@ webpackJsonp([1],{
 	    var winWidth = $(window).width();
 	    setTimeout(function() {
 	        $('.loading').hide();
-	        var leftEnd = winWidth - 160 + 'px';
+	        var leftEnd = winWidth - 170 + 'px';
 	        $('.my-item-title').animate({
 	            left: leftEnd,
 	            opacity: 1

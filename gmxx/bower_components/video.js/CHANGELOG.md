@@ -6,6 +6,27 @@ _(none)_
 
 --------------------
 
+## 5.8.5 (2016-03-17)
+* @gkatsev cleared vttjs script handlers on dispose. Fixed tests ([view](https://github.com/videojs/video.js/pull/3189))
+
+## 5.8.4 (2016-03-17)
+* @gkatsev changed emulated tracks to in novtt to wait for vttjs to load or error before parsing ([view](https://github.com/videojs/video.js/pull/3181))
+
+## 5.8.3 (2016-03-10)
+* @gkatsev fixed keyboard control of menus with titles. Fixes #3164 ([view](https://github.com/videojs/video.js/pull/3165))
+
+## 5.8.2 (2016-03-09)
+* @gkatsev fixed chapters menu. Fixes #3062 ([view](https://github.com/videojs/video.js/pull/3163))
+
+## 5.8.1 (2016-03-07)
+* @gkatsev updated videojs badges in the README ([view](https://github.com/videojs/video.js/pull/3134))
+* @BrandonOCasey converted remaining text-track modules to ES6 ([view](https://github.com/videojs/video.js/pull/3130))
+* @gkatsev cleared waiting/spinner on timeupdate. Fixes #3124 ([view](https://github.com/videojs/video.js/pull/3138))
+* @BrandonOCasey updated text track unit tests to use full es6 syntax ([view](https://github.com/videojs/video.js/pull/3148))
+* @defli added missing var to sandbox index.html example ([view](https://github.com/videojs/video.js/pull/3155))
+* @defli fixed typo and updated Turkish translations ([view](https://github.com/videojs/video.js/pull/3156))
+* @OwenEdwards fixed menu closing on ios, specifically ipad ([view](https://github.com/videojs/video.js/pull/3158))
+
 ## 5.8.0 (2016-02-19)
 * @gkatsev added issue and PR templates for github ([view](https://github.com/videojs/video.js/pull/3117))
 * @Nipoto added fa.json (farsi/persian lang file) ([view](https://github.com/videojs/video.js/pull/3116))

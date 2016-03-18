@@ -22,15 +22,15 @@
     "build"
   ],
   "homepage": "https://github.com/videojs/video.js",
-  "version": "5.8.0",
-  "_release": "5.8.0",
+  "version": "5.8.5",
+  "_release": "5.8.5",
   "_resolution": {
     "type": "version",
-    "tag": "v5.8.0",
-    "commit": "72822890b65663e1de97dcb66fa22e95074c460d"
+    "tag": "v5.8.5",
+    "commit": "41203b0718c26b7eb16472755d9ad1317123904b"
   },
   "_source": "git://github.com/videojs/video.js.git",
-  "_target": "~5.8.0",
+  "_target": "~5.8.5",
   "_originalSource": "video.js",
   "_direct": true
 }
