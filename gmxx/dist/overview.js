@@ -6,9 +6,17 @@ webpackJsonp([1],{
 	/* WEBPACK VAR INJECTION */(function($) {__webpack_require__(23);
 
 	$(function() {
-	    setTimeout(function(){
+	    var winWidth = $(window).width();
+	    setTimeout(function() {
 	        $('.loading').hide();
-	        $('.my-item-title').addClass('move');
+	        var leftEnd = winWidth - 160 + 'px';
+	        $('.my-item-title').animate({
+	            left: leftEnd,
+	            opacity: 1
+	        }, 2000, 'ease-in-out', function() {
+	            $('.my-item-title').css('left', leftEnd);
+	            $('.my-item-title').css('opacity', 1);
+	        });
 	    }, 3000);
 	    $('.my-item-title').on('click', function() {
 	        var that = this;
@@ -16,9 +24,10 @@ webpackJsonp([1],{
 	        setTimeout(function() {
 	            $(that).removeClass('module-tap-active');
 	            location.href = 'http://ywang1724.github.io/gmxx/html/scenery.html';
-	        }, 1400);
+	        }, 1500);
 	    });
 	});
+
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
@@ -58,7 +67,7 @@ webpackJsonp([1],{
 
 
 	// module
-	exports.push([module.id, "* {\n  margin: 0;\n  padding: 0;\n  user-select: none;\n  -webkit-user-select: none;\n}\nbody {\n  background-color: #fbbc05;\n  color: #fff;\n}\n.my-header {\n  width: 100%;\n  height: 260px;\n  background-image: url(" + __webpack_require__(25) + ");\n  background-size: cover;\n  background-repeat: no-repeat;\n}\n.my-menu {\n  margin: 10px;\n}\n.my-menu .space {\n  width: 100%;\n  height: 10px;\n}\n.my-menu .my-item {\n  width: 100%;\n  height: 125px;\n}\n.my-menu .my-item .my-item-img {\n  width: 75%;\n  height: 100%;\n  background-size: cover;\n  background-repeat: no-repeat;\n}\n.my-menu .my-item .my-item-title {\n  display: -webkit-box;\n  -webkit-box-orient: vertical;\n  -webkit-box-pack: center;\n  -webkit-box-align: center;\n  width: 150px;\n  height: 125px;\n  position: relative;\n  top: -125px;\n  left: 205px;\n  z-index: 10;\n  border-top-left-radius: 50%;\n  border-bottom-left-radius: 50%;\n  font-size: 20px;\n}\n.my-menu .my-item-1 .my-item-img {\n  background-image: url(" + __webpack_require__(26) + ");\n}\n.my-menu .my-item-1 .my-item-title {\n  background-color: #ea4335;\n}\n.my-menu .my-item-2 .my-item-img {\n  background-image: url(" + __webpack_require__(27) + ");\n}\n.my-menu .my-item-2 .my-item-title {\n  background-color: #FF4DA9;\n}\n.my-menu .my-item-3 .my-item-img {\n  background-image: url(" + __webpack_require__(28) + ");\n}\n.my-menu .my-item-3 .my-item-title {\n  background-color: #34a853;\n}\n.move {\n  -webkit-animation: move 2s 1 ease-in-out;\n  animation: move 2s 1 ease-in-out;\n}\n@-webkit-keyframes move {\n  0% {\n    left: -10px;\n    opacity: 0;\n  }\n  100% {\n    left: 205px;\n    opacity: 1;\n  }\n}\n@keyframes move {\n  0% {\n    left: -10px;\n    opacity: 0;\n  }\n  100% {\n    left: 205px;\n    opacity: 1;\n  }\n}\n.module-tap-active {\n  -webkit-animation: scaleout 1.5s infinite ease-in-out;\n  animation: scaleout 1.5s infinite ease-in-out;\n}\n@-webkit-keyframes scaleout {\n  0% {\n    -webkit-transform: scale(0.5);\n  }\n  100% {\n    -webkit-transform: scale(2);\n    opacity: 0;\n  }\n}\n@keyframes scaleout {\n  0% {\n    transform: scale(0.5);\n    -webkit-transform: scale(0.5);\n  }\n  100% {\n    transform: scale(2);\n    -webkit-transform: scale(2);\n    opacity: 0;\n  }\n}\n", ""]);
+	exports.push([module.id, "* {\n  margin: 0;\n  padding: 0;\n  user-select: none;\n  -webkit-user-select: none;\n}\nbody {\n  background-color: #fbbc05;\n  color: #fff;\n}\n.my-header {\n  width: 100%;\n  height: 260px;\n  background-image: url(" + __webpack_require__(25) + ");\n  background-size: cover;\n  background-repeat: no-repeat;\n}\n.my-menu {\n  margin: 10px;\n}\n.my-menu .space {\n  width: 100%;\n  height: 10px;\n}\n.my-menu .my-item {\n  width: 100%;\n  height: 125px;\n}\n.my-menu .my-item .my-item-img {\n  width: 75%;\n  height: 100%;\n  background-size: cover;\n  background-repeat: no-repeat;\n}\n.my-menu .my-item .my-item-title {\n  display: -webkit-box;\n  -webkit-box-orient: vertical;\n  -webkit-box-pack: center;\n  -webkit-box-align: center;\n  width: 150px;\n  height: 125px;\n  position: relative;\n  top: -125px;\n  left: -10px;\n  z-index: 10;\n  border-top-left-radius: 50%;\n  border-bottom-left-radius: 50%;\n  font-size: 20px;\n  opacity: 0;\n}\n.my-menu .my-item-1 .my-item-img {\n  background-image: url(" + __webpack_require__(26) + ");\n}\n.my-menu .my-item-1 .my-item-title {\n  background-color: #ea4335;\n}\n.my-menu .my-item-2 .my-item-img {\n  background-image: url(" + __webpack_require__(27) + ");\n}\n.my-menu .my-item-2 .my-item-title {\n  background-color: #FF4DA9;\n}\n.my-menu .my-item-3 .my-item-img {\n  background-image: url(" + __webpack_require__(28) + ");\n}\n.my-menu .my-item-3 .my-item-title {\n  background-color: #34a853;\n}\n.module-tap-active {\n  -webkit-animation: scaleout 1.5s infinite ease-in-out;\n  animation: scaleout 1.5s infinite ease-in-out;\n}\n@-webkit-keyframes scaleout {\n  0% {\n    -webkit-transform: scale(0.5);\n  }\n  100% {\n    -webkit-transform: scale(2);\n    opacity: 0;\n  }\n}\n@keyframes scaleout {\n  0% {\n    transform: scale(0.5);\n    -webkit-transform: scale(0.5);\n  }\n  100% {\n    transform: scale(2);\n    -webkit-transform: scale(2);\n    opacity: 0;\n  }\n}\n", ""]);
 
 	// exports
 

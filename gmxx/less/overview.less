@@ -42,11 +42,12 @@ body {
             height: 125px;
             position: relative;
             top: -125px;
-            left: 205px;
+            left: -10px;
             z-index: 10;
             border-top-left-radius: 50%;
             border-bottom-left-radius: 50%;
             font-size: 20px;
+            opacity: 0;
         }
     }
     .my-item-1 {
@@ -72,33 +73,6 @@ body {
         .my-item-title {
             background-color: rgb(52, 168, 83);
         }
-    }
-}
-
-.move {
-    -webkit-animation: move 2s 1 ease-in-out;
-    animation: move 2s 1 ease-in-out;
-}
-
-@-webkit-keyframes move {
-    0% {
-        left: -10px;
-        opacity: 0;
-    }
-    100% {
-        left: 205px;
-        opacity: 1;
-    }
-}
-
-@keyframes move {
-    0% {
-        left: -10px;
-        opacity: 0;
-    }
-    100% {
-        left: 205px;
-        opacity: 1;
     }
 }
 
