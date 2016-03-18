@@ -2,7 +2,10 @@ require('../less/overview.less');
 
 $(function() {
     var winWidth = $(window).width();
+    var itemHeight = ($('.my-menu').height() - 50) / 4;
     setTimeout(function() {
+        $('.my-item').height(itemHeight);
+        $('.my-item-title').css('top', '-' + itemHeight + 'px');
         $('.loading').hide();
         var leftEnd = winWidth - 170 + 'px';
         $('.my-item-title').animate({

@@ -4,7 +4,7 @@ webpackJsonp([2],{
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function($, Swiper) {__webpack_require__(16);
-	__webpack_require__(29);
+	__webpack_require__(30);
 
 	$(function() {
 	    var mySwiper = new Swiper('.swiper-container', {
@@ -94,13 +94,13 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 29:
+/***/ 30:
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(30);
+	var content = __webpack_require__(31);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(13)(content, {});
@@ -121,7 +121,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 30:
+/***/ 31:
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(6)();

@@ -1,13 +1,15 @@
-webpackJsonp([1],{
-
-/***/ 0:
+webpackJsonp([1],[
+/* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function($) {__webpack_require__(23);
 
 	$(function() {
 	    var winWidth = $(window).width();
+	    var itemHeight = ($('.my-menu').height() - 50) / 4;
 	    setTimeout(function() {
+	        $('.my-item').height(itemHeight);
+	        $('.my-item-title').css('top', '-' + itemHeight + 'px');
 	        $('.loading').hide();
 	        var leftEnd = winWidth - 170 + 'px';
 	        $('.my-item-title').animate({
@@ -31,8 +33,29 @@ webpackJsonp([1],{
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ },
-
-/***/ 23:
+/* 1 */,
+/* 2 */,
+/* 3 */,
+/* 4 */,
+/* 5 */,
+/* 6 */,
+/* 7 */,
+/* 8 */,
+/* 9 */,
+/* 10 */,
+/* 11 */,
+/* 12 */,
+/* 13 */,
+/* 14 */,
+/* 15 */,
+/* 16 */,
+/* 17 */,
+/* 18 */,
+/* 19 */,
+/* 20 */,
+/* 21 */,
+/* 22 */,
+/* 23 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
@@ -58,8 +81,7 @@ webpackJsonp([1],{
 	}
 
 /***/ },
-
-/***/ 24:
+/* 24 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(6)();
@@ -67,39 +89,40 @@ webpackJsonp([1],{
 
 
 	// module
-	exports.push([module.id, "* {\n  margin: 0;\n  padding: 0;\n  user-select: none;\n  -webkit-user-select: none;\n}\nbody {\n  background-color: #fbbc05;\n  color: #fff;\n}\n.my-header {\n  width: 100%;\n  height: 260px;\n  background-image: url(" + __webpack_require__(25) + ");\n  background-size: cover;\n  background-repeat: no-repeat;\n}\n.my-menu {\n  margin: 10px;\n}\n.my-menu .space {\n  width: 100%;\n  height: 10px;\n}\n.my-menu .my-item {\n  width: 100%;\n  height: 125px;\n}\n.my-menu .my-item .my-item-img {\n  width: 75%;\n  height: 100%;\n  background-size: cover;\n  background-repeat: no-repeat;\n}\n.my-menu .my-item .my-item-title {\n  display: -webkit-box;\n  -webkit-box-orient: vertical;\n  -webkit-box-pack: center;\n  -webkit-box-align: center;\n  width: 150px;\n  height: 125px;\n  position: relative;\n  top: -125px;\n  left: -10px;\n  z-index: 10;\n  border-top-left-radius: 50%;\n  border-bottom-left-radius: 50%;\n  font-size: 20px;\n  opacity: 0;\n}\n.my-menu .my-item-1 .my-item-img {\n  background-image: url(" + __webpack_require__(26) + ");\n}\n.my-menu .my-item-1 .my-item-title {\n  background-color: #ea4335;\n}\n.my-menu .my-item-2 .my-item-img {\n  background-image: url(" + __webpack_require__(27) + ");\n}\n.my-menu .my-item-2 .my-item-title {\n  background-color: #FF4DA9;\n}\n.my-menu .my-item-3 .my-item-img {\n  background-image: url(" + __webpack_require__(28) + ");\n}\n.my-menu .my-item-3 .my-item-title {\n  background-color: #34a853;\n}\n.module-tap-active {\n  -webkit-animation: scaleout 1.5s infinite ease-in-out;\n  animation: scaleout 1.5s infinite ease-in-out;\n}\n@-webkit-keyframes scaleout {\n  0% {\n    -webkit-transform: scale(0.5);\n  }\n  100% {\n    -webkit-transform: scale(2);\n    opacity: 0;\n  }\n}\n@keyframes scaleout {\n  0% {\n    transform: scale(0.5);\n    -webkit-transform: scale(0.5);\n  }\n  100% {\n    transform: scale(2);\n    -webkit-transform: scale(2);\n    opacity: 0;\n  }\n}\n", ""]);
+	exports.push([module.id, "* {\n  margin: 0;\n  padding: 0;\n  user-select: none;\n  -webkit-user-select: none;\n}\nhtml,\nbody {\n  color: #fff;\n  height: 100%;\n  background-color: #fbbc05;\n}\n.my-header {\n  width: 100%;\n  height: 38.2%;\n  background-image: url(" + __webpack_require__(25) + ");\n  background-size: cover;\n  background-repeat: no-repeat;\n}\n.my-menu {\n  height: 61.8%;\n  padding: 0 10px;\n}\n.my-menu .space {\n  height: 10px;\n}\n.my-menu .my-item {\n  width: 100%;\n}\n.my-menu .my-item .my-item-img {\n  width: 75%;\n  height: 100%;\n  background-size: cover;\n  background-position: center;\n  background-repeat: no-repeat;\n}\n.my-menu .my-item .my-item-title {\n  display: -webkit-box;\n  -webkit-box-orient: vertical;\n  -webkit-box-pack: center;\n  -webkit-box-align: center;\n  width: 150px;\n  height: 100%;\n  position: relative;\n  left: -10px;\n  z-index: 10;\n  border-top-left-radius: 50%;\n  border-bottom-left-radius: 50%;\n  font-size: 20px;\n  opacity: 0;\n}\n.my-menu .my-item-1 .my-item-img {\n  background-image: url(" + __webpack_require__(26) + ");\n}\n.my-menu .my-item-1 .my-item-title {\n  background-color: #ea4335;\n}\n.my-menu .my-item-2 .my-item-img {\n  background-image: url(" + __webpack_require__(27) + ");\n}\n.my-menu .my-item-2 .my-item-title {\n  background-color: #FF4DA9;\n}\n.my-menu .my-item-3 .my-item-img {\n  background-image: url(" + __webpack_require__(28) + ");\n}\n.my-menu .my-item-3 .my-item-title {\n  background-color: #34a853;\n}\n.my-menu .my-item-4 .my-item-img {\n  background-image: url(" + __webpack_require__(29) + ");\n}\n.my-menu .my-item-4 .my-item-title {\n  background-color: #3ABCFF;\n}\n.module-tap-active {\n  -webkit-animation: scaleout 1.5s infinite ease-in-out;\n  animation: scaleout 1.5s infinite ease-in-out;\n}\n@-webkit-keyframes scaleout {\n  0% {\n    -webkit-transform: scale(0.5);\n  }\n  100% {\n    -webkit-transform: scale(2);\n    opacity: 0;\n  }\n}\n@keyframes scaleout {\n  0% {\n    transform: scale(0.5);\n    -webkit-transform: scale(0.5);\n  }\n  100% {\n    transform: scale(2);\n    -webkit-transform: scale(2);\n    opacity: 0;\n  }\n}\n", ""]);
 
 	// exports
 
 
 /***/ },
-
-/***/ 25:
+/* 25 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "../dist/1.jpg";
 
 /***/ },
-
-/***/ 26:
+/* 26 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "../dist/2.jpg";
 
 /***/ },
-
-/***/ 27:
+/* 27 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "../dist/7.jpg";
 
 /***/ },
-
-/***/ 28:
+/* 28 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "../dist/8.jpg";
 
-/***/ }
+/***/ },
+/* 29 */
+/***/ function(module, exports, __webpack_require__) {
 
-});
+	module.exports = __webpack_require__.p + "../dist/9.jpg";
+
+/***/ }
+]);
