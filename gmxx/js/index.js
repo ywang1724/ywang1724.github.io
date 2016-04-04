@@ -30,6 +30,10 @@ $(function() {
     var centerX = $('.center').offset().left + 42;
     var centerY = $('.center').offset().top + 42;
 
+    $('.body').on('touchstart', function(event) {
+        event.preventDefault();
+    });
+
     //点击事件
     $(".circle").on('touchstart', function(event) {
         preX = event.touches[0].clientX;
