@@ -34,7 +34,7 @@ webpackJsonp([0],[
 	    var centerX = $('.center').offset().left + 42;
 	    var centerY = $('.center').offset().top + 42;
 
-	    $('.body').on('touchstart', function(event) {
+	    $('body').on('touchstart', function(event) {
 	        event.preventDefault();
 	    });
 
