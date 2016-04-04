@@ -13,7 +13,9 @@ $(function() {
     document.querySelector('.center').onclick = function(e) {
         e.preventDefault();
         document.querySelector('.circle').classList.toggle('open');
-    }
+    };
+    var margin = ($('body').width() - $('.circle').width()) / 2;
+    $('.circle').css('margin', '100px ' + margin + 'px 0');
     $('.loading').hide();
     setTimeout(function() {
         $('.circle').addClass('open');
@@ -54,6 +56,4 @@ $(function() {
             preAngle = curAngle;
         });
     });
-    //释放事件
-    $("html").unbind("touchmove");
 });
