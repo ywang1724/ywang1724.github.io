@@ -43,9 +43,9 @@ $(function() {
             transferAngle = curAngle - preAngle;
             a += (transferAngle * 180 / Math.PI);
             // $('.circle').rotate(a);
-            $('.circle').animate({rotateZ: a + 'deg'});
+            $('.circle').animate({rotate: a + 'deg'});
 
-            $('.menuItem').animate({rotateZ: -a + 'deg'});
+            $('.menuItem').animate({rotate: -a + 'deg'});
             // for (var i = 1; i <= 6; i++) {
             //     $('.menuItem').rotate(-a);
             // }
