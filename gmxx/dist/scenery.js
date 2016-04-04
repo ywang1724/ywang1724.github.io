@@ -3,8 +3,8 @@ webpackJsonp([2],{
 /***/ 0:
 /***/ function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function($, Swiper) {__webpack_require__(23);
-	__webpack_require__(25);
+	/* WEBPACK VAR INJECTION */(function($, Swiper) {__webpack_require__(22);
+	__webpack_require__(24);
 
 	$(function() {
 	    var mySwiper = new Swiper('.swiper-container', {
@@ -23,11 +23,11 @@ webpackJsonp([2],{
 	    });
 	});
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1), __webpack_require__(22)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1), __webpack_require__(21)))
 
 /***/ },
 
-/***/ 22:
+/***/ 21:
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -52,13 +52,13 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 23:
+/***/ 22:
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(24);
+	var content = __webpack_require__(23);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(11)(content, {});
@@ -79,7 +79,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 24:
+/***/ 23:
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(4)();
@@ -94,13 +94,13 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 25:
+/***/ 24:
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(26);
+	var content = __webpack_require__(25);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(11)(content, {});
@@ -121,7 +121,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 26:
+/***/ 25:
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(4)();
