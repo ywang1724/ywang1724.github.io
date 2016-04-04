@@ -43,9 +43,9 @@ $(function() {
             transferAngle = curAngle - preAngle;
             a += (transferAngle * 180 / Math.PI);
             // $('.circle').rotate(a);
-            $('.circle').animate({rotate: a + 'deg'});
+            $('.circle').animate({ rotate: a + 'deg' });
 
-            $('.menuItem').animate({rotate: -a + 'deg'});
+            $('.menuItem').animate({ rotate: -a + 'deg' });
             // for (var i = 1; i <= 6; i++) {
             //     $('.menuItem').rotate(-a);
             // }
@@ -53,9 +53,7 @@ $(function() {
             preY = curY;
             preAngle = curAngle;
         });
-        //释放事件
-        $("html").on('touchend', function(event) {
-            $("html").unbind("touchmove");
-        });
     });
+    //释放事件
+    $("html").unbind("touchmove");
 });

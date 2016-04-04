@@ -47,9 +47,9 @@ webpackJsonp([0],[
 	            transferAngle = curAngle - preAngle;
 	            a += (transferAngle * 180 / Math.PI);
 	            // $('.circle').rotate(a);
-	            $('.circle').animate({rotate: a + 'deg'});
+	            $('.circle').animate({ rotate: a + 'deg' });
 
-	            $('.menuItem').animate({rotate: -a + 'deg'});
+	            $('.menuItem').animate({ rotate: -a + 'deg' });
 	            // for (var i = 1; i <= 6; i++) {
 	            //     $('.menuItem').rotate(-a);
 	            // }
@@ -57,11 +57,9 @@ webpackJsonp([0],[
 	            preY = curY;
 	            preAngle = curAngle;
 	        });
-	        //释放事件
-	        $("html").on('touchend', function(event) {
-	            $("html").unbind("touchmove");
-	        });
 	    });
+	    //释放事件
+	    $("html").unbind("touchmove");
 	});
 
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
